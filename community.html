@@ -11,6 +11,15 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
+        html,
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+        }
+
         #navbar {
             display: grid;
             grid-template-columns: 5fr 1.5fr;
@@ -18,6 +27,9 @@
             gap: 10%;
             color: #0066ee;
             font-size: 16px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 0;
+            padding: 0;
         }
 
         #navbar>div {
@@ -45,12 +57,14 @@
         }
 
         #div2>div>img {
-            width: 40px;
+            width: 30px;
             height: 30px;
         }
 
         /* body top */
         #top {
+            margin: 0;
+            padding: 0;
             background-image:
                 linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
                 url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=1200&q=75');
@@ -119,7 +133,8 @@
             height: 50px;
             border-radius: 100px;
         }
-        button{
+
+        button {
             background-color: #0066ee;
             color: white;
             font-size: 20px;
@@ -254,7 +269,7 @@
             <hr>
         </div>
         <div id="rightDiv">
-            <button>+  New Post</button>
+            <button>+ New Post</button>
             <div>
                 <h4>Quick Links</h4>
                 <div id="quickLinks">
