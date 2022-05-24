@@ -1,0 +1,20 @@
+{
+  "exercise": [
+    {
+      "name": "pull-ups"
+    },
+    {
+      "name": "push-ups"
+    }
+  ],
+
+  "signup" : [
+      {
+            "home" : "mumbai"
+      },
+
+      {
+            "home" : "lakhnow"
+      }
+  ]
+}
