@@ -1,10 +1,49 @@
 {
     "exercise" : [
         {
-            "name" : "pull-ups"
+            "name" : "Aerobics, general",
+            "weight" :{
+                "pound" : 100,
+                "kilogram" : 45
+            },
+            "time": 1,
+            "met" : 5
         },
         {
-            "name" : "push-ups"
+            "name" : "Aerobics, high impact",
+            "weight" :{
+                "pound" : 100,
+                "kilogram" : 45
+            },
+            "time": 1,
+            "met" : 6
+        },
+        {
+            "name" : "Aerobics, low impact",
+            "weight" :{
+                "pound" : 100,
+                "kilogram" : 45
+            },
+            "time": 1,
+            "met" : 4
+        },
+        {
+            "name" : "Teaching aerobics class",
+            "weight" :{
+                "pound" : 100,
+                "kilogram" : 45
+            },
+            "time": 1,
+            "met" : 5
+        },
+        {
+            "name" : "Water Aerobics",
+            "weight" :{
+                "pound" : 100,
+                "kilogram" : 45
+            },
+            "time": 1,
+            "met" : 3
         }
     ]
 
