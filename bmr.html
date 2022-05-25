@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your BMR</title>
+    <link rel="stylesheet" href="../myFitnessPal-Clone/css/bmr.css">
+</head>
+<body>
+    <div id="container">
+        <h2>BMR Calculator</h2>
+        <div id="main">
+            <div id="head">
+                <div id="content">
+                    <div id="bmrcal">
+                        <h3>Calculator Your BMR</h3>
+                        <p>
+                            To determine your current BMR, please provide the following information:
+                        </p>
+                        <div>
+                            <div id="bmrdata">
+                                <span>Current Weigth:</span>
+                                <input type="number" name="" id="cweigth">
+                                <select name="" id="weight" onchange="weight()">
+                                    <option value="kilograms">kilograms</option>
+                                    <option value="Pounds">Pounds</option>
+                                </select>
+                            </div>
+                            <div id="bmrdatah">
+                               <span> Height:</span>
+                                <input type="number" name="" id="feet">
+                                <input type="number" name="" id="inch">
+                                <select name="" id="" onchange="">
+                                    <option value="Feet/Inches">Feet/Inches</option>
+                                    <option value="Pounds">Cenitmeters</option>
+                                </select>
+                            </div>
+                            <div id="bmrage">
+                                <span>Age:</span>
+                                <input type="number" name="" id="age">
+                            </div>
+                            <div id="bmrgender">
+                                 <span> Sex:</span>
+                                <input type="radio" name="gender" id="M" value="M">
+                                <label for="">Male</label>
+                                <input type="radio" name="gender" id="F" value="F">
+                                <label for="">Female</label>
+                            </div>
+                        </div>
+                        <div id="calculate">
+                            <button>Calculator</button>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="aboutbmr">
+                <h3>What is Your BMR?</h3>
+                <div>
+                    <p>
+                        Your BMR (Basal Metabolic Rate) is an estimate of how many calories you'd burn if you were to do nothing but rest for 24 hours. It represents the minimum amount of energy needed to keep your body functioning, including breathing and keeping your heart beating.
+                    </p>
+                    <p>
+                        Your BMR does not include the calories you burn from normal daily activities or exercise.
+                    </p>
+                    <p>
+
+                        Our calculator uses the Mifflin-St. Jeor equations to estimate your BMR which is believed to be more accurate than the more commonly used Harris-Benedict equation.</p>
+                    </p>
+                        
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../myFitnessPal-Clone/js/bmr.js"></script>
+</html>
