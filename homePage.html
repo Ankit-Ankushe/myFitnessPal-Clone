@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+        }
+
+        #top {
+            padding-top: 100;
+            margin: auto;
+            width: 80%;
+            height: 70px;
+            display: grid;
+            grid-template-columns: 1.5fr 4fr;
+            gap: 30%
+        }
+
+        #top>div>img {
+            width: 90%;
+            height: 50%;
+            margin: 5%;
+        }
+
+        #leftDiv {
+            display: flex;
+            gap: 10px;
+        }
+
+        #leftDiv>div {
+            display: flex;
+            gap: 10px;
+            /* margin-top: 7px; */
+        }
+
+        #leftDiv>div>a>img {
+            height: 30px;
+            width: 30px;
+            margin-top: 10px;
+        }
+
+        #leftDiv>div>img {
+            height: 30px;
+            width: 30px;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #bottom {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            height: auto;
+            font-weight: bold;
+            background-color: #0072bf;
+        }
+
+        #bottom>div {
+            text-align: center;
+            padding: 1%;
+        }
+
+        #bottom>div>a {
+            color: white;
+        }
+
+        #bottom>div:hover {
+            background-color: #00548f;
+        }
+
+        #bottom2 {
+            display: flex;
+            justify-content: center;
+            height: auto;
+            background-color: #00548f;
+        }
+
+        #bottom2>div>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #bottom2>div {
+            padding: 1%;
+            color: white;
+        }
+
+        #body {
+            margin: auto;
+            width: 58%;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;
+            gap: 20px;
+            height: auto;
+            margin-top: 100px;
+        }
+
+
+        #topleft {
+            height: 50px;
+            width: 100%;
+            background-color: #0A5282;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        #topleft>div {
+            margin: 20px;
+            /* margin-top: 20px; */
+            display: flex;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #bodyleft {
+            background-color: #f6f6f6;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #bodyleft>div {
+            /* border: 1px solid red; */
+            height: auto;
+        }
+
+        #userPhoto {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #cecece;
+            margin: auto;
+        }
+
+        #userPhoto>img {
+            height: 50px;
+            width: 50px;
+            border: 1px solid #cecece;
+        }
+
+        #caloriesRemaining {
+            font-size: 45px;
+            color: #85c400;
+            font-weight: bold;
+        }
+
+        #bodyleft>div>div>p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #claoriesDetailDiv {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: 100px 350px;
+            gap: 50px;
+        }
+
+    
+        #addFoodExcerciseDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        #addFoodExcerciseDiv>button {
+            padding: 2%;
+        }
+
+        #yourSummaryBottom {
+            display: flex;
+            gap: 40px;
+        }
+
+        #yourSummaryBottom>div>p {
+            color: #999999;
+        }
+
+        /* left bottom body */
+        #newsFeed {
+            margin-top: 20px;
+            background-color: #0A5282;
+            padding: 2%;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #feedText {
+            width: 80%;
+            height: 100px;
+        }
+
+        #feedBox {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 500px 10px
+        }
+        #likeCommentDiv>button{
+            border: none;
+        }
+        #likeCommentDiv>button>img{
+            width: 30px;
+            height:30px;
+        }
+        #commentDiv{
+            margin-top: 20px;
+            border: 1px solid #cecece;
+        }
+        #rightDiv{
+            margin-left: 50px;
+            width: 300px;
+            font-size: 12px;
+        }
+    
+        #rightDiv>h3,h4{
+          color: #0066ee;
+          font-size: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div id="top">
+        <div><img src="https://us.v-cdn.net/6024397/uploads/RP38WAYG9BJD/mfp-wordmark-indigo-tm.png" alt=""></div>
+        <div id="leftDiv">
+            <div>
+                <p>hi, </p>
+                <p>username</p>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.w8csn2YW8Ds6UEUuweEqCAHaHa&pid=Api&P=0&w=167&h=167">
+                </a>
+                <p style="background-color: red; width: 20px; height: 20px; color: white;">1</p>
+                <img src="https://wbecs.com/wbecs20/wp-content/themes/wbecs20/assets/img/membersarea/user_icon1.png"
+                    alt="">
+                <p style="background-color: lightgray; width: 20px; height: 20px; color: darkgrey;">0</p>
+            </div>
+            <div>
+                <a href="">
+                    <p>Help</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <p>Setting</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <p>Log Out</p>
+                </a>
+            </div>
+            <div>
+                <p>Follow us:</p>
+                <a href="https://facebook.com/myfitnesspal"><img
+                        src="https://tse1.mm.bing.net/th?id=OIP.53b08CedN8D1qIPKNpEczAHaHt&pid=Api&P=0&w=159&h=165"></a>
+                <a href="https://twitter.com/myfitnesspal"><img
+                        src="https://tse2.mm.bing.net/th?id=OIP.uQlQc1ej3xTRMpywzGuFvAHaHw&pid=Api&P=0&w=156&h=163"></a>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div><a href="" onclick="navbarFunc(1)">MY HOME</a></div>
+        <div><a href="" onclick="navbarFunc(2)">FOOD</a></div>
+        <div><a href="" onclick="navbarFunc(3)">EXERCISE</a></div>
+        <div><a href="" onclick="navbarFunc(4)">REPORT</a></div>
+        <div><a href="" onclick="navbarFunc(5)">APPS</a></div>
+        <div><a href="./community.html">COMMUNITY</a></div>
+        <div><a href="">BLOG</a></div>
+        <div><a href="./premium.html">PREMIUM</a></div>
+    </div>
+    <div id="bottom2">
+        <div><a href="" id="a1"></a></div>
+        <div><a href="" id="a2"></a></div>
+        <div><a href="" id="a3"></a></div>
+        <div><a href="" id="a4"></a></div>
+        <div><a href="" id="a5"></a></div>
+        <div><a href="" id="a6"></a></div>
+        <div><a href="" id="a7"></a></div>
+        <div><a href="" id="a8"></a></div>
+    </div>
+
+    <!-- body -->
+    <div id="body">
+        <div id="bodyleftDiv">
+            <!-- Body head -->
+            <div id="topleft">
+                <div>Your Daily Summary</div>
+                <div>
+                    <p id="p">X</p>day STREAK
+                </div>
+            </div>
+            <div id="bodyleft">
+                <div>
+                    <div id="userPhoto" style="background-color: darkgrey;"> <button><a href="">upload
+                                photo</a></button><img src="">
+                    </div>
+                    <p style="font-size: 25px;
+                    color: #85c400;
+                    font-weight: bold;">50 lbs</p>
+                    <p style="color: #666666; font-size: 20px;">Lost</p>
+                </div>
+                <div id="claoriesDetailDiv">
+                    <div>
+                        <p>calories remaining</p>
+                        <p id="caloriesRemaining">2030</p>
+                        <hr>
+                    </div>
+                    <div id="addFoodExcerciseDiv">
+                        <button>Add Excercises</button>
+                        <button>Add Food</button>
+                    </div>
+                    <div id="yourSummaryBottom">
+                        <div>
+                            <p id="goalCal" style="font-size: 20px; color: #666666;">2030</p>
+                            <p>GOAL</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p id="foodCal" style="font-size: 20px; color: #666666;">0</p>
+                            <p>FOOD</p>
+                        </div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div>
+                            <p id="exerciseCal" style="font-size: 20px; color: #666666;">0</p>
+                            <p>EXCERCISE</p>
+                        </div>
+                        <div>
+                            <p>=</p>
+                        </div>
+                        <div>
+                            <p id="netCal" style="font-size: 20px; color: #666666;">0</p>
+                            <p>NET</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body feed -->
+            <div id="newsFeed">News Feeds</div>
+            <div id="feedBox">
+                <div><textarea id="feedText" placeholder="What is in your mind ..."></textarea> </div>
+                <div><button
+                        style="padding: 10px;background-color: #0072bf; color: white; font-weight: bold; border: none; border-radius: 10px;">Share</button>
+                </div>
+            </div>
+            <!-- body bottom -->
+            <div>
+                <div id="commentDiv">
+                    <p>username</p>
+                    <p>burned 74 calories doing 10 minutes of Aerobics, general</p>
+                    <div id="likeCommentDiv">
+                        <button onclick="likeFunc(0)" id="like"><img
+                                src="https://tse1.mm.bing.net/th?id=OIP.4KvxxO2KUSBQsRFx2htT-gHaHv&pid=Api&P=0&w=152&h=158"
+                                alt="">like</button>
+                        <button onclick="commentFunc()" > <img src="https://tse1.mm.bing.net/th?id=OIP.YuIH70NKu43T1e4vtvnr4AHaHa&pid=Api&P=0&w=161&h=161" alt="">comment</button>
+                    <div style="background-color: #f6f6f6;"><input placeholder="write something..." type="text" style="width: 90% ;margin: 30px; padding: 2%;"></div>
+                    </div>
+                </div>
+                <div id="commentDiv">
+                    <p>username</p>
+                    <p>burned 74 calories doing 10 minutes of Aerobics, general</p>
+                    <div id="likeCommentDiv">
+                        <button onclick="likeFunc(0)" id="like"><img
+                                src="https://tse1.mm.bing.net/th?id=OIP.4KvxxO2KUSBQsRFx2htT-gHaHv&pid=Api&P=0&w=152&h=158"
+                                alt="">like</button>
+                        <button onclick="commentFunc()" > <img src="https://tse1.mm.bing.net/th?id=OIP.YuIH70NKu43T1e4vtvnr4AHaHa&pid=Api&P=0&w=161&h=161" alt="">comment</button>
+                    <div style="background-color: #f6f6f6;"><input placeholder="write something..." type="text" style="width: 90% ;margin: 30px; padding: 2%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rightDiv">
+
+            <h3>Recent Forum Topics</h3>
+            <ul>
+                <li>Any plant based success?</li>
+                <li>What's Your Most Recent NSV</li>
+                <li>What nobody tells you about losing weight</li>
+                <li>What nobody tells you about losing weight</li>
+            </ull>
+            <h3>HelloHealthy</h3>
+            <hr>
+            <h4>Eating For Impact: How to Eat to Boost Your Mood</h4>
+            <p>Mood disorders have been linked to gut health problems. Support a healthy gut and boost your mood with tips from MyFitnessPal’s registered dietitian.</p>
+            <h4>Do Sleep Drinks Actually Help You Sleep Better?</h4>
+            <p>You’re probably better off making your own DIY sleep drink (recipe included).</p>
+            <h4>How Lack of Sleep Affects Junk Food Cravings</h4>
+            <p>Sleep deprivation makes our body and brain crave higher-calorie foods.</p>
+        </div>
+    </div>
+</body>
+<script>
+    function navbarFunc(ele) {
+        if (ele == 1) {
+            document.getElementById("p").innerText = "10"
+            document.getElementById("a1").innerText = "Home";
+            document.getElementById("a2").innerText = "Goals";
+            document.getElementById("a3").innerText = "Check-In";
+            document.getElementById("a4").innerText = "Mail";
+            document.getElementById("a5").innerText = "Profile";
+            document.getElementById("a6").innerText = "Friends";
+            document.getElementById("a7").innerText = "Setting";
+        }
+        if (ele == 2) {
+            document.getElementById("a1").innerHTML = "Food Diary";
+            document.getElementById("a2").innerText = "Database";
+            document.getElementById("a3").innerText = "My Foods";
+            document.getElementById("a4").innerText = "My Meals";
+            document.getElementById("a5").innerText = "Recipes";
+            document.getElementById("a6").innerText = "Setting";
+            document.getElementById("a7").innerText = "";
+        }
+        if (ele == 3) {
+            document.getElementById("a1").innerHTML = "Exercise Diary";
+            document.getElementById("a2").innerText = "Database";
+            document.getElementById("a3").innerText = "My Excercises";
+            document.getElementById("a4").innerText = "Setting";
+            document.getElementById("a5").innerText = "";
+            document.getElementById("a6").innerText = "";
+            document.getElementById("a7").innerText = "";
+        } if (ele == 4) {
+            document.getElementById("a1").innerHTML = "Charts";
+            document.getElementById("a2").innerText = "Export Data";
+            document.getElementById("a3").innerText = "Weekly  Digest";
+            document.getElementById("a4").innerText = "";
+            document.getElementById("a5").innerText = "";
+            document.getElementById("a6").innerText = "";
+            document.getElementById("a7").innerText = "";
+        } if (ele == 5) {
+            document.getElementById("a1").innerHTML = "App Gallery";
+            document.getElementById("a2").innerText = "Mobile";
+            document.getElementById("a3").innerText = "Tickers";
+            document.getElementById("a4").innerText = "Badges";
+            document.getElementById("a5").innerText = "BMR";
+            document.getElementById("a6").innerText = "BMI";
+            document.getElementById("a7").innerText = "";
+        }
+    }
+   function likeFunc(){
+       document.getElementById("like").innerText = ""
+   }
+   function commentFunc(){
+       document.getElementById("feedText").innerText= "write"
+   }
+</script>
+
+</html>
