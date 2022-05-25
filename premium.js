@@ -61,5 +61,30 @@ rightArrow.addEventListener("click" , function(){
 })
 
 
+    let dropParaDiv = document.querySelectorAll("#dropDownContainer >.dropParaDiv");
+      console.log(dropParaDiv);
+        
+       var flag = false;
+document.querySelectorAll("#dropDownContainer >.dropDiv >div:last-child" ).forEach((arrowDiv , index) => {
+            
+        arrowDiv.addEventListener("click" , function(){
+              dropParaDiv[index].style.display = "block";
+              flag = true;
+                
+              if(flag){
+                arrowDiv.addEventListener("click" , function(){
+                    dropParaDiv[index].style.display = "none";
+                    flag = false;
+                    window.location.reload();
+              })
+            }
+        })
+
+    })
+     
+
+
+
+
 
 

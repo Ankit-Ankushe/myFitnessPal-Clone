@@ -19,6 +19,10 @@
     
 }
 
+#goesToannualMonthDiv{
+    scroll-behavior : smooth;
+}
+
 #firstPremiumContainer > div:first-child{
     padding-top : 20px;
 }
@@ -329,7 +333,7 @@
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
     background-image : url("https://www.myfitnesspal.com/react-static/78a85ff61ae51bacb70e2839935c0b84.svg");
     background-repeat: no-repeat;
-    height : 1200px;
+    height : auto;
     background-size : auto ;
     margin-top : 100px;
 
@@ -351,9 +355,11 @@
 #fifthPremiumContainer>div#premiumAndResultContainer{
     background-image: url("https://www.myfitnesspal.com/react-static/b96cec4f94f4413f2891c9bde43f3bcc.png") , url("https://www.myfitnesspal.com/react-static/5505f9a4cc71985801691b723cf64d9a.png");
     background-repeat: no-repeat,no-repeat;
-    height : 2000px;
+    height : 800px;
     background-size : 15% , 25%;
     background-position : bottom left 6% , bottom right 6%;
+    margin-top : 40px;
+
 
 }
 
@@ -369,4 +375,127 @@
      align-items : center;
      background-color : #f5f5f5;
      padding : 0 20px;
+     cursor : pointer;
+
+}
+
+
+#dropDownContainer >div.dropParaDiv{
+    display : none;
+    text-align : justify;
+    width: 95%;
+    margin :auto;
+}
+
+#premiumAndResultContainer>div#titleContainer{
+    padding-top :80px;
+}
+
+#premiumAndResultContainer>p:nth-child(2){
+    text-align : center;
+    width : 40%;
+    margin : auto;
+}
+
+#premiumAndResultContainer >div#titleContainer>div:first-child{
+    background: #FFC600;
+    width : 5%;
+    margin : auto;
+    border-radius : 5px;
+    padding : 5px 10px;
+    font-size : 14px;
+}
+
+#annualMonthlyDiv{
+    display : flex;
+    width : 60%;
+    margin : auto;
+    margin-top : 50px;
+    justify-content : space-between;
+    text-align : center;
+
+}
+
+#annualMonthlyDiv > div{
+    width : 46%;
+    border-radius : 5px;
+    box-shadow :rgba(0, 0, 0, 0.24)
+
+}
+
+#annualMonthlyDiv > div:nth-child(1){
+    background: #FFC600;
+}
+
+#annualMonthlyDiv > div:nth-child(1)>div:nth-child(1){
+    padding : 8px;
+    font-weight : bold;
+
+}
+
+#annualMonthlyDiv div#annualDiv{
+    background : white;
+    width : 98%;
+    margin : auto;
+    padding-bottom : 30px;
+    margin-bottom : 1px;
+
+}
+
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(1){
+    padding-top: 20px;
+    font-weight : bold;
+}
+
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(2){
+        display : flex;
+        justify-content : center;
+        padding : 20px;
+        padding-bottom : 30px;
+}
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(2)>div:nth-child(1){
+    font-size : 40px;
+    font-weight : 900;
+    vertical-align : bottom;
+
+}
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(2)>div:nth-child(2){
+    padding-top : 30px;
+    padding-left : 10px;
+}
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(3){
+    width : 60%;
+    margin : auto;
+    color : #6D717A;
+    font-size : 16px;
+    margin-bottom : 50px;
+}
+
+#annualMonthlyDiv div#annualDiv>div:nth-child(4){
+          background : #0066EE;
+          width : 70%;
+          margin : auto;
+          padding : 20px; 
+          border-radius : 5px;
+          font-size : 14px;
+          color : white;
+          cursor : pointer;
+}
+
+#annualMonthlyDiv div#monthlyDiv{
+    padding-top : 35px;
+    background : white;
+    border-radius : 5px;
+}
+
+#annualMonthlyDiv div#annualDiv>div#monthlySubscribe{
+      background : none;
+      color : #0066EE;
+      font-weight : bold;
+      border : 2px solid #0066EE;
 }

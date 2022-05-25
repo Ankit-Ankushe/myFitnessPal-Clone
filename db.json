@@ -1,10 +1,11 @@
 {
-    "exercise" : [
-        {
-            "name" : "pull-ups"
-        },
-        {
-            "name" : "push-ups"
-        }
-    ]
+  "exercise": [
+    {
+      "name": "pull-ups"
+    },
+    {
+      "name": "push-ups"
+    }
+  ]
+  
 }

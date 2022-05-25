@@ -6,15 +6,6 @@
     {
       "name": "push-ups"
     }
-  ],
-
-  "signup" : [
-      {
-            "home" : "mumbai"
-      },
-
-      {
-            "home" : "lakhnow"
-      }
   ]
+
 }
