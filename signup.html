@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+         <div id = "signupHeader">
+                   <div><a href = "#">myfitnesspal</a></div>
+                   <div><a href = "#">LOG IN</a></div>
+         </div>
+
+         <div id = "signupBorder">
+                    <div></div>
+         </div>
+
+         <div id = "welcomeContainer">
+                   <div>Welcome! Just a few quick questions so we can customize MyFitnessPal for you.</div>
+                    <div id = "continueBtn"><a>CONTINUE</a></div>
+         </div>
+
+         <div id = "weightGoalContainer">
+             <div>What is your weight goal?</div>
+             <div>
+             <div class = "lmgweight">Lose weight</div>
+             <div>Maintain Weight</div>
+             <div>Gain weight</div>
+             </div>
+         </div>
+
+         <div id = "baselineContainer">
+                 <div>
+                        <div>What is your baseline activity level?</div>
+                        <div>Not including workouts–we count that separately</div>
+                 </div>
+
+                 <div>
+                         <div class = "baselineActive">
+                                   <div>Not very Active</div>
+                                   <div>Spend most of the day sitting(e.g., bankteler , desk job)</div>
+                         </div>
+                         <div>
+                                   <div>Lightly Active</div>
+                                   <div>Spend a good part of the day on your feet(e.g., teacher , salesperson)</div>
+                         </div>
+                         <div>
+                                   <div>Active</div>
+                                   <div>Spend a good part of the day doing some physical activity(e.g., food server, poster carrier)</div>
+                         </div>
+                         <div>
+                                    <div>Very Active</div>
+                                    <div>Spend a good part of the day doing heavy physical activity(e.g., bike messenger , carpenter)</div>
+                         </div>
+                 </div>
+
+         </div>
+
+         <div id = "sexCalorieContainer">
+                <div>Please select which sex we should use to calculate your calorie needs.</div>
+                <select id="genderSelect">
+                       <option value="male">Male</option>
+                       <option value="female">Female</option>
+                </select>
+                <div>When were you born?</div>
+                 <input type="date" placeholder = "mm/dd/yyy"/>
+                 <div>Where do you live?</div>
+                 <div>
+                         <input type="text" placeholder = "Country"/>
+                         <input type="text" placeholder = "Zip Code"/>
+                 </div>
+                 <div>We use this information to calculate an accurate calorie goal for you.</div>
+
+         </div>
+
+         <div id = "tallAndWeightContainer">
+                     <div>How tall are you?</div>
+                     <input id = "inputHeight" placeholder = "Height In Centimeter"/>
+                     <div>How much do you weigh?</div>
+                     <div>It's OK to estimate. You can update this later.</div>
+                     <input id ="inputCurrentWeight" placeholder = "Current Weight in pounds"/>
+                     <div>What's your goal weight?</div>
+                     <div>Don't worry. This doesn't affect your daily calorie goal and you can always change it later.</div>
+                     <input id ="inputGoalWeight" placeholder = "Goal Weight in pounds"/>
+         </div>
+
+         <div id = btnContainer>
+            <div id = "backBtn">BACK</div>
+            <div id = "nextBtn">NEXT</div>
+       </div>  
+</body>
+   <script src = "./signup.js"></script>
+</html>

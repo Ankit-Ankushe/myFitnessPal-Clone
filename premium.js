@@ -81,7 +81,15 @@ document.querySelectorAll("#dropDownContainer >.dropDiv >div:last-child" ).forEa
         })
 
     })
+
+    document.getElementById("annualSubscribe").addEventListener("click" , function(){
+         window.location.href = "./payment.html";
+    })
      
+    document.getElementById("monthlySubscribe").addEventListener("click" , function(){
+        window.location.href = "./monthlyPayment.html";
+   })
+    
 
 
 
