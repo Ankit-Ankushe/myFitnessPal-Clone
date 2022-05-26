@@ -41,7 +41,11 @@ function cal() {
     a.append(button)
     a.setAttribute("id","calculate")
     document.getElementById('main').remove()
-    document.getElementById("container").append(h,a)
+    var box=document.createElement('div')
+    box.setAttribute("id","main")
+    box.append(h,a)
+
+    document.getElementById("container").append(box )
     
  console.log(bmr)
     // console.log(weigth, feet, inch, age, sex)
