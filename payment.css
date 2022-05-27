@@ -62,6 +62,16 @@ body{
     width : 30%;
 }
 
+#inputOrderContainer > div:nth-child(1)>div:nth-child(5){
+      width : 70%;
+      margin : auto;
+      margin-top : 20px;
+      color : red;
+      text-align : center;
+      font-size : 14px;
+      display : none;
+}
+
 #inputOrderContainer > div:nth-child(1)>div:last-child{
     width : 100%;
     background : #0066EE;

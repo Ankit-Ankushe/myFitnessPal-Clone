@@ -25,12 +25,13 @@
                    <input type="text" id = "cardNumber" placeholder = "Card Number"/>
                     <div>
                    <input type="text" id = "mmyy" placeholder = "MM/YY"/>
-                   <input type="text" id = "cvc" placeholder = "CVC"/>
-                   <input type="text" id = "zipcode" placeholder = "Zip Code"/>
+                   <input type="text" id = "cvv" placeholder = "CVV"/>
+                   <input type="text" id = "zipCode" placeholder = "Zip Code"/>
                    </div>
-                   <div>PLACE ORDER</div>
-
+                   <div id = "invalidPayment">Invalid Credentials. Please try again</div>
+                   <div id = "placeOrder">PLACE ORDER</div>
            </div>
+
            <div id = "orderContainer">
                   <div>Order Summary</div>
                   <div>
@@ -42,4 +43,5 @@
            </div>
     </div>
 </body>
+    <script src = "./payment.js"></script>
 </html>

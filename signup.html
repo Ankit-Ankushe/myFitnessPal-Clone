@@ -9,8 +9,8 @@
 </head>
 <body>
          <div id = "signupHeader">
-                   <div><a href = "#">myfitnesspal</a></div>
-                   <div><a href = "#">LOG IN</a></div>
+                   <div><a href = "./leandingpage.html">myfitnesspal</a></div>
+                   <div><a href = "./login.html">LOG IN</a></div>
          </div>
 
          <div id = "signupBorder">
@@ -65,7 +65,7 @@
                        <option value="female">Female</option>
                 </select>
                 <div>When were you born?</div>
-                 <input type="date" placeholder = "mm/dd/yyy"/>
+                 <input type="text" placeholder = "mm-dd-yyy" id = "birthDate"/>
                  <div>Where do you live?</div>
                  <div>
                          <input type="text" placeholder = "Country"/>
@@ -84,6 +84,43 @@
                      <div>What's your goal weight?</div>
                      <div>Don't worry. This doesn't affect your daily calorie goal and you can always change it later.</div>
                      <input id ="inputGoalWeight" placeholder = "Goal Weight in pounds"/>
+         </div>
+
+         <div id = "weeklyGoalContainer">
+                 <div>What is your weekly goal?</div>
+                 <div>Let's break down your overall health goal into a weekly one you can maintain. Slow-and-steady is best!</div>
+                 <div>
+                         <div>Lose 0.5 pounds per week</div>
+                         <div class = "perWeek">Lose 1 pound per week(Recommended)</div>
+                         <div>Lose 1.5 pounds per week</div>
+                         <div>Lose 2 pounds per week</div>
+                 </div>
+          </div>
+
+          <div id = "createContainer">
+                 <div>Almost there! Create your account</div>
+                 <input type = "email" id = "email" placeholder = "email address"/>
+                 <div id = "validEmail">Please enter a valid email address.</div>
+                 <input type = "password" id = "password" , placeholder = "Create a Password"/>
+                 <div>Must be at least 10 characters, no spaces.</div>
+                 <div id = "validPassword">Try again? Your password must have at least 10 characters, no spaces.</div>
+                 <div>CONTINUE</div>
+         </div>
+
+         <div id = "createUserContainer">
+                   <div>Create a username.</div>
+                   <input type="text" , id = "createUser" placeholder = "Create a username">
+                   <div>This username is already exist.</div>
+                   <div id = "finishBtn">FINISH</div>
+         </div>
+
+         <div id = "congratulationContainer">
+                 <div>Congratulations!</div>
+                 <div>Your daily net calorie goal is:</div>
+                 <div>2,990</div>
+                 <div>calories</div>
+                 <div>You have to maintain this goal daily.</div>
+                 <div id = "myFitnessPal">EXPLORE MYFITNESSPAL</div>
          </div>
 
          <div id = btnContainer>
