@@ -149,3 +149,10 @@ td{
 tbody>tr>td{
     background-color: #f6f6f6;
 }
+td>button{
+    background-color: red; 
+    color: white;
+     border-radius: 90%; 
+     font-size: larger; 
+     font-weight: bold;
+}

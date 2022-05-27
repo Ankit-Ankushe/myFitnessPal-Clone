@@ -1,5 +1,5 @@
 {
-    "exercise" : [
+    "cardio" : [
         {
             "name" : "Aerobics, general",
             "weight" :{
@@ -44,6 +44,23 @@
             },
             "time": 1,
             "met" : 3
+        }
+    ],
+    "strength":[
+        {
+            "name":"push ups",
+            "met": 20
+        },
+        {
+            "name":"Triceps Push Down",
+            "met" : 10
+        }
+    ],
+    "userAddedExercise" : [
+        {
+            "exname":"skipping",
+            "time":10,
+            "cal" :45
         }
     ],
     "fruits" : [

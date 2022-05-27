@@ -1,4 +1,14 @@
-<!-- Nav Bar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Excercise</title>
+    <link rel="stylesheet" href="./css/addStrength.css">
+</head>
+<body>
+    <!-- Nav Bar -->
 <div id="top">
     <div><img src="https://us.v-cdn.net/6024397/uploads/RP38WAYG9BJD/mfp-wordmark-indigo-tm.png" alt=""></div>
     <div id="leftDiv">
@@ -50,12 +60,50 @@
     <div><a href="./premium.html">PREMIUM</a></div>
 </div>
 <div id="bottom2">
-    <div><a  id="a1">Home</a></div>
-    <div><a  id="a2">Goal</a></div>
-    <div><a  id="a3">Check-In</a></div>
-    <div><a  id="a4">Mail</a></div>
-    <div><a  id="a5">Profile</a></div>
-    <div><a  id="a6">My Blog</a></div>
-    <div><a  id="a7">Friend</a></div>
-    <div><a  id="a8">Setting</a></div>
+    <div><a  id="a1">Excercise Dairy</a></div>
+    <div><a  id="a2">Database</a></div>
+    <div><a  id="a3">My Excercise</a></div>
+    <div><a  id="a4">Setting</a></div>
+    <div><a  id="a5"></a></div>
+    <div><a  id="a6"></a></div>
+    <div><a  id="a7"></a></div>
+    <div><a  id="a8"></a></div>
 </div>
+
+<!-- body -->
+<div id="container">
+    <h2>Add Exercise</h2>
+    <hr>
+    <h3>Search our exercise database by name:</h3>
+    <div>
+        <input id="inputExercise" type="text" value="">
+        <button id="searchBut" onclick="fetchAndDisplay()"> Search </button>
+    </div>
+    <!-- <h3>Or, add your most recently used cardio exercises.</h3>
+    <button>Add Chechked</button> -->
+    <h3>Matching Excercises:</h3>
+   <div id="bottomData">
+    <div id="searchedDataDiv"></div>
+    <div id="addedDataDiv">
+        <h4>Adding:</h4>
+        <h5 id="exerciseName" style="color: red;"></h5>
+        <div style="display: flex ;">
+            <h3>Weight</h3>
+            <input type="text" class="inputEx"  placeholder="in kg" id="weight">
+        </div>
+        <div style="display: flex ;">
+            <h3>How long?</h3>
+            <input type="text" class="inputEx" onchange="displayCal()" placeholder="in min" id="time">
+        </div>
+        <div style="display: flex ;">
+            <h3>Calories Burnt  :</h3>
+            <p id="calBurnt" style="font-size: 20px;"></p>
+        </div>
+        <button onclick="addData()">Add Excercise</button>
+    </div>
+   </div>
+</div>
+
+</body>
+<script src="./js/addStrength.js"></script>
+</html>
