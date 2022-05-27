@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        #setting-top{
+            display: grid;
+            grid-template-columns: repeat(2,1fr );
+            width: 80%;
+            margin: auto;
+            gap:50px;
+            /* text-align: center; */
+        }
+        .pri-setting{
+            color: #0a5282;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #setting-top-con1 a {
+            color: #0072bc;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #setting-top-con2 a{
+            text-decoration: none;
+            color: #0072bc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #setting-top-con1 a:hover {
+            color: #e35454;
+            
+        }
+        #setting-top-con2 a:hover{
+            color: #e35454;
+        }
+        
+#footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr;
+    /* height: 300px; */
+    margin-top: 50px;
+    /* border: 1px solid red ; */
+    background-color: #F0F2F4;
+    padding: 4px;
+}
+#footer-content{
+    width: 82%;
+    margin: auto;
+
+    /* padding: 4px; */
+    margin-top: 25px;
+    margin-right: 2px;
+    height: 100px;
+    /* border: 1px solid rgb(0, 0, 0) ; */
+
+}
+#footer-content a{
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    /* background-color: #F0F2F4; */
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px;
+}
+#footer-content a:hover{
+    color:  rgb(88, 88, 222);
+}
+#footer-content p{
+   text-align: center;
+   font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+   font-size: 11px;
+   line-height: 30px;
+}
+#select-box{
+    width: 40%;
+    /* border: 1px solid orange; */
+    
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 4px;
+}
+    </style>
+</head>
+<body>
+    <div id="setting-top">
+        <div id="setting-top-con1"> 
+            <ul>
+                <h1 class="pri-setting">Account Settings</h1>
+                <p>
+
+                    <a href="#">Subscription Settings</a>
+                </p>
+                <p>
+
+                    <a href="#">Change Password</a>
+                </p>
+                <p>
+
+                    <a href="#">Change email address/email preferences</a>
+                </p>
+                <p>
+
+                    <a href="#">Change Username</a>
+                </p>
+                <p>
+
+                    <a href="#">Change Time Zone</a>
+                </p>
+                <p>
+
+                    <a href="#">Update diet/fitness profile</a>
+                </p>
+                <p>
+
+                    <a href="#">Diary Settings</a>
+                </p>
+                <p>
+
+                    <a href="#">Change Units</a>
+                </p>
+                <p>
+
+                    <a href="#">Change Language</a>
+                </p>
+                <p>
+
+                    <a href="#">Delete Account</a>
+                </p>
+            </ul>
+        </div>
+        <div id="setting-top-con2">
+            <ul>
+
+                <h1 class="pri-setting">Privacy Settings</h1>
+               <p>
+    
+                   <a href="#">Terms</a>
+               </p>
+               <p>
+    
+                   <a href="#">Privacy Policy</a>
+               </p>
+               <p>
+    
+                   <a href="#">Personalization</a>
+               </p>
+               <p>
+    
+                   <a href="#">Privacy Settings</a>
+               </p>
+               <p>
+    
+                   <a href="#">Facebook/Twitter sharing settings</a>
+               </p>
+               <p>
+    
+                   <a href="#">Automatic News Feed Update Settings</a>
+               </p>
+               <p>
+    
+                   <a href="#">Contact Us</a>
+               </p>
+            </ul>
+            
+        </div>
+    </div>
+    <div id="footer" >
+        <div id="footer-content">
+          
+
+              <a href="#">Calorie Counter</a>
+          
+          
+
+              <a href="#">Blog</a>
+          
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">API</a>
+            <a href="#">Jobs</a>
+            <a href="#">Feedback</a>
+            <a href="#">Community Guidelines</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Do Not Sell My Personal Information</a>
+            <p>© 2022 MyFitnessPal, Inc.</p>
+        </div>
+            <div id="select-box">
+                
+            <select aria-label="language-selector" name="" id="">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="pt">Português (Brasil)</option>
+                <option value="it">Italiano</option>
+                <option value="nb">Norsk</option>
+                <option value="nl">Nederlands</option>
+                <option value="ru">Pусский</option>
+                <option value="da">Dansk</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+
+            </select>
+        </div>
+        
+</body>
+</html>
