@@ -46,11 +46,9 @@
             "met" : 3
         }
     ],
-    "fruits" : 
-       {
-           "apple" :[
+    "apple":[
             {
-                "Name": "Spara+tan Apple",
+                "Name": "Sparatan Apple",
                 "Quantity": "1",
                 "Calories": "50",
                 "Carbs": "13g",
@@ -91,7 +89,8 @@
                 "Protein": "0g"
             }
            ],
-           "grapes":[
+
+    "grapes":[
             {
                 "Name": "Green Grapes",
                 "Quantity": "1 cup",
@@ -133,7 +132,4 @@
                 "Protein": "2g"
                }
            ]
-       }
-
-
 }
