@@ -1,3 +1,4 @@
+
 // image slider
 var myIndex = 0;
 carousel();
