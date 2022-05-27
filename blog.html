@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<style>
+    body{
+        background-color: #2a57a0;
+    }
+    #blog-nav{
+        display: grid;
+        grid-template-columns: 1fr 3fr 4fr;
+        margin: -10px;
+        margin-right: -20px;
+        height: 100%;
+        width: 100%;
+        border-bottom: solid 1px white;
+        gap: 1px;
+        background-color:white;
+    }
+
+    #navCon-1{
+        background-color: #2a57a0;
+        height: 50px;
+    }
+    #navCon-1 img{
+        width: auto;
+        height: 47px;
+    }
+
+    #navCon-2 {
+        background-color: #2a57a0; 
+        height: 50px;
+    }
+
+    #navCon-2 h4{
+        color: aliceblue;
+        margin-top: 10px;
+        margin-left: 15px;
+        font: bold 12px arial, sans-serif;
+        line-height: 5px;
+        font-size: 14px;
+    }
+
+    #navCon-2 a {
+        font: bold 12px arial, sans-serif;
+        margin-top: 10px;
+        margin-left: 15px;
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 0px;
+        font-weight: 100;
+    }
+
+    #navCon-3 {
+        background-color: #2a57a0; 
+        height: 50px;
+        margin-right: 0px;
+    }
+    
+    #navCon-3 h4{
+        color: aliceblue;
+        margin-top: 10px;
+        margin-left: 15px;
+        font: bold 12px arial, sans-serif;
+        line-height: 5px;
+        font-size: 14px;
+    }
+
+    #navCon-3 a{
+        font: bold 12px arial, sans-serif;
+        margin-top: 10px;
+        margin-left: 15px;
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 0px;
+        font-weight: 100;
+        word-spacing: normal;
+    }
+
+    #blog-nav a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    #main{
+        background-color: white;
+        margin: auto;
+        margin-top: 12px;
+        border: solid 1px white;
+        width: 60%;
+        height: 440px;
+
+    }
+
+    #header{
+        margin-top: 0px;
+        background-color: #63AAD4;
+        width: 100%;
+        height: 130px;
+    }
+
+    #content{
+        padding: 2px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #content1{
+        margin: 1px;
+    }
+
+    #content2{
+        background-color: #eeeeee;
+        margin: 1px;
+        height: auto;
+    }
+
+    #photo{
+        margin-left:20px;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+
+    #header a{
+        color: black;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    #header h1{
+        margin-top: 35px;
+        margin-left: 20px;
+        font-family: Arial,sans-serif;
+    }
+    #header h1:hover{
+       text-decoration: underline;
+    }
+
+    #content1 h3{
+        margin-left: 20px;
+        font-family: Arial,sans-serif;
+    }
+
+    #content1 p{
+        margin-left: 20px;
+        font-family: Arial,sans-serif;
+        font-size: 12px;
+    }
+
+    #content h3{
+        margin-left: 20px;
+        font-family: Arial,sans-serif;
+    }
+
+    #content2 a{
+        text-decoration: none;
+        color: #0f73ab;
+    }
+    #content2 a:hover{
+        text-decoration: underline;
+    }
+
+    #pic{
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        margin-top: 8px;
+    }
+
+    #photo p{
+        margin-top: 15px;
+        /* border: 1px solid red; */
+        margin-bottom: 20px;
+        /* vertical-align: top; */
+        font-family: Arial,sans-serif;
+        text-align: center;
+        /* margin: 3px; */
+        font-size: 14px;
+    }
+    #copyright{
+        text-align: right;
+        font-family: Arial,sans-serif;
+        /* border: 1px solid red; */
+        font-size: 12px;
+        margin: 15px;
+
+      
+    }
+  </style>
+<body>
+        <div  id="blog-nav">
+            <div id="navCon-1">
+                <a href="#">
+                    <img src="https://d34yn14tavczy0.cloudfront.net/assets/blog_logo-3d447da7803b1891fffdcd3951bc470181f1d17abffb9eca6aee3520e414c973.gif" alt="">
+                </a>
+            </div>
+            <div id="navCon-2" >
+                <h4>You are viewing aplodhi's blog</h4>
+                <a href="#">aplodhi's profile</a>
+                <a href="#">More blogs</a>
+            </div>
+            <div id="navCon-3">
+                <h4>MyFitnessPal Links</h4>
+                <a href="#">My Home</a>
+                <a href="#">Food</a>
+                <a href="#">Exercise</a>
+                <a href="#">Reports</a>
+                <a href="#">Apps</a>
+                <a href="#">Community</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="header">
+                <a href="#"><h1>Aplodhi's Blog</h1></a>
+            </div>
+            <div id="content">
+                <div id="content1">
+                    <h3>Welcome to your MyFitnessPal blog!</h3>
+                    <p>
+                        To create an entry, click on "Add Post" under the "Tools" section to the right.
+                    </p>
+                    <p>You can also customize the look and feel of your blog by clicking on the "Preferences" link.</p>
+                </div>
+                <div id="content2">
+                    <h3>About Me</h3>
+                    <div id="photo">
+                        <div id="pic">
+
+                            <p>This user has not uploaded a photo</p>
+                        </div>
+                    </div>
+
+                    <h3>Tools</h3>
+                    <ul>
+                        <a href="#">Add post</a><br>
+                        <a href="#">Preferences</a><br>
+                        <a href="#">Subscribe
+                        <span><img src="https://d34yn14tavczy0.cloudfront.net/assets/rss-68167e273ca07d122b7a4f438e94f9be7a1365bb91df3cea7177d2ac36e36f9d.gif">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>© 2022 MyFitnessPal, Inc.</p>
+            </div>
+        </div>
+    
+</body>
+</html>

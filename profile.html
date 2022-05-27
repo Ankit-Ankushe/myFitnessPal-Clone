@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #profile-info{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        border: 1px solid black;
+    }
+    #profile-box{
+        display: flex;
+        width: 55%;
+
+        /* border: 1px solid red; */
+        margin: auto;
+        gap: 53px;
+        height: 250px;
+        padding: 20px;
+        /* justify-content: space-evenly; */
+        background-color: #f0f2f4;
+        /* flex-direction: column; */
+    }
+    #profile-box-content-1{
+        border: 1px solid red;
+        width: auto ;
+
+    }
+    #profile-box-content-1 img{
+        width: 110%;
+    }
+    #profile-box-content-2{
+        border: 1px solid gray;
+        /* margin-right: px; */
+    }
+    .btn{
+        display: block;
+    }
+    #piller{
+        border: 1px solid green;
+    }
+
+</style>
+<body>
+    <div>
+        <h1>aplodhi's profile</h1>
+        <div id="profile-info">
+            <div id="profile-box">
+                <div id="profile-box-content-1">
+
+                    <img src="https://www.myfitnesspal.com/_next/image?url=https%3A%2F%2Fd34yn14tavczy0.cloudfront.net%2Fimages%2Fno_photo.png&w=320&q=75" alt="">
+                </div>
+                <div id="profile-box-content-2">
+
+                    <p>aplodhi</p>
+                    <p>21 years old</p>
+                    <p>Male</p>
+                    <p>Member since May 24, 2022     </p>
+                    <button class="btn">EDIT PROFILE</button>
+                    <button class="btn">EDIT PHOTOS</button>
+                </div>
+
+            </div>
+            <div id="piller">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
