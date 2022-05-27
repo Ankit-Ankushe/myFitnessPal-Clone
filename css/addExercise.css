@@ -122,5 +122,6 @@
             width: 50%;
             border: 1px solid #444444;
             height: 200px;
+            overflow-y: scroll;
         }
         
