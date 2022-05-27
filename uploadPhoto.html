@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends</title>
-    <link rel="stylesheet" href="friends.css">
+    <title>Upload Photo</title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+#top {
+    padding-top: 100;
+    margin: auto;
+    width: 80%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    gap: 30%
+}
+
+#top>div>img {
+    width: 90%;
+    height: 50%;
+    margin: 5%;
+}
+
+#leftDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#leftDiv>div {
+    display: flex;
+    gap: 10px;
+    /* margin-top: 7px; */
+}
+
+#leftDiv>div>a>img {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+#leftDiv>div>img {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: auto;
+    font-weight: bold;
+    background-color: #0072bf;
+}
+
+#bottom>div {
+    text-align: center;
+    padding: 1%;
+}
+
+#bottom>div>a {
+    color: white;
+}
+
+#bottom>div:hover {
+    background-color: #00548f;
+}
+
+#bottom2 {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: #00548f;
+}
+
+#bottom2>div>a {
+    text-decoration: none;
+    color: white;
+}
+
+#bottom2>div {
+    padding: 1%;
+    color: white;
+}
+#container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+#uploadBut{
+    padding: 2%;
+    background-color: #51a351;
+}
+p{
+    font-size: 12px;
+}
+    </style>
 </head>
 
 <body>
@@ -70,59 +184,20 @@
         <div><a href="./friends.html" id="a7">Friend</a></div>
         <div><a href="./setting.html" id="a8">Setting</a></div>
     </div>
-    <div id="friend-head">
-        <div>
-            <h2>Ankit's Friends</h2>
-        </div>
-        <div>
-            <button id="email-btn">Email</button>
-        </div>
-        
-    </div>
-    <div id="line-1">
-    </div>
-    <div id="friend-con">
-        <p>You currently do not have any friends added. Invite your friends by <span><a href="#">email
 
-        </a></span>  so you can give each other support and motivation.</p>
-    </div>
-    <div id="line-2">
-    </div>
-    <div id="footer" >
-        <div id="footer-content">
-            <a href="#">Calorie Counter</a>
-            <a href="#">Blog</a>
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
-            <a href="#">Contact Us</a>
-            <a href="#">API</a>
-            <a href="#">Jobs</a>
-            <a href="#">Feedback</a>
-            <a href="#">Community Guidelines</a>
-            <a href="#">Ad Choices</a>
-            <a href="#">Do Not Sell My Personal Information</a>
-            <p>© 2022 MyFitnessPal, Inc.</p>
+    <!-- body -->
+    <h2>Your Photo</h2>
+    <div id="container">
+        <div>
+            <h1 >You have not uploaded a photo yet</h1>
         </div>
-            <div id="select-box">
-                
-            <select aria-label="language-selector" name="" id="">
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="pt">Português (Brasil)</option>
-                <option value="it">Italiano</option>
-                <option value="nb">Norsk</option>
-                <option value="nl">Nederlands</option>
-                <option value="ru">Pусский</option>
-                <option value="da">Dansk</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-
-            </select>
+        <div>
+            <h3 style="color:#00548f;">Add A New Photo*</h3>
+            <p>To add a photo to your profile, first choose a photo from your computer, then click "Upload Photo"</p>
+            <button>Choose File</button>
+            <button id="uploadBut">Upload Photo</button>
+            <p>*Photos depicting adult content, hateful imagery, illegal activities or copyrighted material are not allowed.</p>
         </div>
         
-        
     </div>
-</body>
-</html>
+    <div id="bottom">Click on an image below to select it</div>

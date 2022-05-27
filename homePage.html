@@ -52,23 +52,23 @@
     </div>
     <div id="bottom">
         <div><a href="./homePage.html" >MY HOME</a></div>
-        <div><a>FOOD</a></div>
+        <div><a href="">FOOD</a></div>
         <div><a href="./exerciseDairy.html" >EXERCISE</a></div>
         <div><a  >REPORT</a></div>
         <div><a  href="./appgallery.html" >APPS</a></div>
         <div><a href="./community.html">COMMUNITY</a></div>
-        <div><a href="">BLOG</a></div>
+        <div><a href="./blog.html">BLOG</a></div>
         <div><a href="./premium.html">PREMIUM</a></div>
     </div>
     <div id="bottom2">
-        <div><a  id="a1">Home</a></div>
-        <div><a  id="a2">Goal</a></div>
-        <div><a  id="a3">Check-In</a></div>
-        <div><a  id="a4">Mail</a></div>
-        <div><a  id="a5">Profile</a></div>
-        <div><a  id="a6">My Blog</a></div>
-        <div><a  id="a7">Friend</a></div>
-        <div><a  id="a8">Setting</a></div>
+        <div><a href="./homePage.html" id="a1">Home</a></div>
+        <div><a href="./goals.html" id="a2">Goal</a></div>
+        <!-- <div><a  id="a3">Check-In</a></div> -->
+        <!-- <div><a href=""  id="a4">Mail</a></div> -->
+        <div><a href="./profile.html" id="a5">Profile</a></div>
+        <div><a href="./blog.html" id="a6">My Blog</a></div>
+        <div><a href="./friends.html" id="a7">Friend</a></div>
+        <div><a href="./setting.html" id="a8">Setting</a></div>
     </div>
 
     <!-- body -->
@@ -83,7 +83,7 @@
             </div>
             <div id="bodyleft">
                 <div>
-                    <div id="userPhoto" style="background-color: darkgrey;"> <button><a href="">upload
+                    <div id="userPhoto" style="background-color: darkgrey;"> <button><a href="uploadPhoto.html">upload
                                 photo</a></button><img src="">
                     </div>
                     <p style="font-size: 25px;
@@ -92,13 +92,13 @@
                     <p style="color: #666666; font-size: 20px;">Lost</p>
                 </div>
                 <div id="claoriesDetailDiv">
-                    <div>
+                    <div style="margin-left: 20px">
                         <p>calories remaining</p>
                         <p id="caloriesRemaining">2030</p>
                         <hr>
                     </div>
                     <div id="addFoodExcerciseDiv">
-                        <button>Add Excercises</button>
+                        <button onclick="addExercise()">Add Excercises</button>
                         <button>Add Food</button>
                     </div>
                     <div id="yourSummaryBottom">
