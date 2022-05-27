@@ -46,6 +46,7 @@
             "met" : 3
         }
     ],
+<<<<<<< HEAD
     "strength":[
         {
             "name":"push ups",
@@ -66,6 +67,9 @@
     "fruits" : [
        {
            "apple" :[
+=======
+    "apple":[
+>>>>>>> 7d40e91b471a75961a7eaa8b62f460b17089ca9a
             {
                 "Name": "Sparatan Apple",
                 "Quantity": "1",
@@ -108,7 +112,8 @@
                 "Protein": "0g"
             }
            ],
-           "grapes":[
+
+    "grapes":[
             {
                 "Name": "Green Grapes",
                 "Quantity": "1 cup",
@@ -150,7 +155,4 @@
                 "Protein": "2g"
                }
            ]
-       }
-    ]
-
 }

@@ -229,3 +229,12 @@ a {
   font-size: 14px;
 
 }
+#footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 150px;
+}
+#footer a{
+    margin: 5px;
+}
