@@ -1,0 +1,1 @@
+let inputExercise = document.getElementById("inputExercise")
