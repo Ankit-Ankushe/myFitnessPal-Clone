@@ -46,11 +46,11 @@
             "met" : 3
         }
     ],
-    "fruits" : [
+    "fruits" : 
        {
            "apple" :[
             {
-                "Name": "Sparatan Apple",
+                "Name": "Spara+tan Apple",
                 "Quantity": "1",
                 "Calories": "50",
                 "Carbs": "13g",
@@ -134,6 +134,6 @@
                }
            ]
        }
-    ]
+
 
 }
