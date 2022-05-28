@@ -19,3 +19,7 @@ document.getElementById("placeOrder").addEventListener("click", function(){
         window.location.href = "./homePage.html";
     }
 })
+
+document.querySelector("#paymentHeader>div:nth-child(1)").addEventListener("click" , function(){
+    window.location.href = "./homePage.html"
+})
