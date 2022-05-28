@@ -1,5 +1,55 @@
 {
-    "exercise" : [
+<<<<<<< HEAD
+  "exercise": [
+    {
+      "name": "Aerobics, general",
+      "weight": {
+        "pound": 100,
+        "kilogram": 45
+      },
+      "time": 1,
+      "met": 5
+    },
+    {
+      "name": "Aerobics, high impact",
+      "weight": {
+        "pound": 100,
+        "kilogram": 45
+      },
+      "time": 1,
+      "met": 6
+    },
+    {
+      "name": "Aerobics, low impact",
+      "weight": {
+        "pound": 100,
+        "kilogram": 45
+      },
+      "time": 1,
+      "met": 4
+    },
+    {
+      "name": "Teaching aerobics class",
+      "weight": {
+        "pound": 100,
+        "kilogram": 45
+      },
+      "time": 1,
+      "met": 5
+    },
+    {
+      "name": "Water Aerobics",
+      "weight": {
+        "pound": 100,
+        "kilogram": 45
+      },
+      "time": 1,
+      "met": 3
+    }
+  ]
+ 
+=======
+    "cardio" : [
         {
             "name" : "Aerobics, general",
             "weight" :{
@@ -46,7 +96,26 @@
             "met" : 3
         }
     ],
-    "apple":[
+    "strength":[
+        {
+            "name":"push ups",
+            "met": 20
+        },
+        {
+            "name":"Triceps Push Down",
+            "met" : 10
+        }
+    ],
+    "userAddedExercise" : [
+        {
+            "exname":"skipping",
+            "time":10,
+            "cal" :45
+        }
+    ],
+    "fruits" : [
+       {
+           "apple" :[
             {
                 "Name": "Sparatan Apple",
                 "Quantity": "1",
@@ -132,4 +201,7 @@
                 "Protein": "2g"
                }
            ]
+        }
+        ]
+>>>>>>> 3a3a74200bbded853dec8c057ea13c50ca42a80f
 }

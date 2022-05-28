@@ -96,7 +96,7 @@ body {
 
 }
 
-#weightGoalContainer , #baselineContainer ,#sexCalorieContainer ,#tallAndWeightContainer{
+#weightGoalContainer , #baselineContainer ,#sexCalorieContainer ,#tallAndWeightContainer ,#weeklyGoalContainer , #createContainer , #createUserContainer , #congratulationContainer{
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
    display : none;
    position : absolute;
@@ -110,8 +110,6 @@ body {
    border-radius : 5px;
    
 }
-
-
 
 #weightGoalContainer>div:nth-child(1){
     font-weight : 800;
@@ -182,7 +180,7 @@ body {
     border: 2px solid #0066EE;
 }
 
-#baselineContainer , #sexCalorieContainer{
+#baselineContainer , #sexCalorieContainer , #tallAndWeightContainer , #weeklyGoalContainer{
     padding-bottom : 200px;
 }
 
@@ -217,7 +215,7 @@ body {
      margin-left : 10%;
 }
 
-#sexCalorieContainer>div:nth-child(1) ,#sexCalorieContainer>div:nth-child(3) ,#sexCalorieContainer>div:nth-child(5){
+#sexCalorieContainer>div:nth-child(1) ,#sexCalorieContainer>div:nth-child(3) ,#sexCalorieContainer>div:nth-child(5) ,#congratulationContainer>div:nth-child(1){
     width : 68%;
     margin : auto;
     font-size : 18px;
@@ -263,5 +261,193 @@ body {
     margin : auto;
     margin-top : 60px;
     font-size : 14px;
+}
+
+
+#tallAndWeightContainer>*,#weeklyGoalContainer>*{
+    width : 68%;
+    margin : auto;
+    text-align : left;
+    margin-bottom : 20px;
+}
+
+#tallAndWeightContainer>div:nth-child(1) , #tallAndWeightContainer>div:nth-child(3), #tallAndWeightContainer>div:nth-child(6), #createContainer>div:nth-child(1) , #createUserContainer >div:nth-child(1){
+    font-size : 18px;
+    font-weight : bold;
+    margin-bottom : 20px;
+    
+}
+
+#tallAndWeightContainer>input{
+    font-size : 18px;
+    height : 40px; 
+    margin-bottom : 40px;
+}
+
+#tallAndWeightContainer>div:nth-child(4) , #tallAndWeightContainer>div:nth-child(7){
+       font-size : 13px;
+}
+
+#weeklyGoalContainer>div:nth-child(1){
+    font-size : 18px;
+    font-weight : bold;
+    margin-bottom : 10px;
+}
+
+#weeklyGoalContainer>div:nth-child(2){
+    font-size : 13px;
+    margin-bottom : 20px;
+    color : rgb(109, 113, 122);
+    text-align : center;
+}
+#weeklyGoalContainer>div:nth-child(3)>div{
+    cursor : pointer;
+    border :  2px solid #eee;
+    padding : 20px 0px;
+    margin-bottom : 10px;
+    border-radius : 5px;
+}
+
+#weeklyGoalContainer>div:nth-child(3)>div:hover{
+    border : 2px solid  grey;
+}
+#weeklyGoalContainer>div:nth-child(3)>div.perWeek{
+    border: 2px solid #0066EE;
+    color : #0066EE;
+}
+
+#weeklyGoalContainer>div:nth-child(2)>div.perWeek:hover{
+    border: 2px solid #0066EE;
+}
+
+#createContainer>div#validEmail ,#createContainer>div#validPassword{
+      display : none;
+      color : red;
+      font-size : 14px;
+      width : 75%;
+      margin : auto;
+      margin-top : 5px;
+      margin-bottom : 15px;
+      text-align : left;
+}
+
+#createContainer>input , #createUserContainer >input{
+    height : 50px;
+    font-size : 16px;
+    border-radius : 5px;
+    outline-color : #0066EE;
+    cursor : pointer;
+    border : 2px solid #eee;
+    padding-left : 5px;
+    width : 75%;
+    margin : auto;
+    display : block;
+    margin-bottom : 10px;
+}
+
+#createContainer>input:hover , #createUserContainer >input:hover{
+    border : 2px solid  grey;
+}
+
+#createContainer>div:nth-child(5){
+    width : 75%;
+    margin : auto;
+    font-size : 14px;
+    color : rgb(109, 113, 122);
+    text-align : left;
+}
+
+#createContainer>div:nth-child(7){
+    width : 75%;
+    margin : auto;
+    text-align : center;
+    font-size : 16px;
+    font-weight : bold;
+    background-color : #0066EE;
+    padding : 15px 0px;
+    border-radius : 5px;
+    cursor : pointer;
+    margin-top : 80px;
+    color : white;
+}
+
+#createUserContainer >div:nth-child(3){
+     width : 75%;
+     margin : auto;
+     color : red ;
+     font-size : 13px;
+     display : none;
+}
+
+#createUserContainer >div:nth-child(4){
+    width : 40%;
+    margin : auto;
+    text-align : center;
+    font-size : 16px;
+    font-weight : bold;
+    margin-top : 60px;
+    padding : 15px 0px;
+    background-color : #0066EE;
+    color : white;
+    border-radius : 5px;
+    cursor : pointer;
+
+}
+
+#congratulationContainer>div{
+    width : 100%;
+    margin : auto;
+    text-align : center;
+}
+
+#congratulationContainer>div:nth-child(1){
+    font-size : 30px;
+    margin-bottom : 40px;
+    text-align : center;
+    color : #0066EE;
+}
+
+#congratulationContainer>div:nth-child(2){
+    margin-top : 40px;
+    font-size : 15px;
+    font-weight : 600;
+}
+
+#congratulationContainer>div:nth-child(3){
+    margin-top : 30px;
+    font-size : 40px;
+    margin-bottom : 20px;
+    font-weight : bold;
+}
+
+#congratulationContainer>div:nth-child(4){
+    width : 30%;
+    color : #0066EE; 
+    cursor : pointer;
+    font-size : 15px;
+    background : #DEE1E7;
+    padding : 15px 0px;
+    margin-bottom : 40px;
+    border-radius : 5px;
+
+}
+
+#congratulationContainer>div:nth-child(5){
+      font-size : 20px;
+      font-weight : bold;
+      margin-bottom : 60px;
+}
+
+#congratulationContainer>div:nth-child(6){
+      width : 70%;
+      margin : auto;
+      background : #0066EE;
+      padding : 15px 0px;
+      color : white;
+      font-size : 18px;
+      font-weight : 800px;
+      border-radius : 5px;
+      margin-bottom : 40px;
+      cursor : pointer;
 }
 

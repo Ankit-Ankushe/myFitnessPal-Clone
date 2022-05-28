@@ -97,7 +97,6 @@
         /* body */
         #container{
             width: 50%;
-            border: 1px solid red;
             margin: auto;
         }
         #container>h2{
@@ -124,4 +123,14 @@
             height: 200px;
             overflow-y: scroll;
         }
-        
+        #bottomData{
+            display: flex;
+        }
+        .inputEx{
+            height: 30px;
+            width: 40px;
+        }
+        #addedDataDiv{
+            text-align: center;
+            margin-left: 50px;
+        }

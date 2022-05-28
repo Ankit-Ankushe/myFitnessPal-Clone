@@ -3,14 +3,67 @@
 
 // document.getElementById("diplayDate").append(p);
 
-function dateDec(ele){
+function dateDec(ele) {
     ele--;
-    document.getElementById("displayDate").innerText =`Friday,May ${ele} ,2022 `;
-return ele;
+    document.getElementById("displayDate").innerText = `Friday,May ${ele} ,2022 `;
+    return ele;
     // document.getElementById("displayDate").append(ele)
 }
-function dateInc(ele){
+function dateInc(ele) {
     ele++;
-document.getElementById("displayDate").innerText =`Friday,May ${ele} ,2022 `;
-return ele;
+    document.getElementById("displayDate").innerText = `Friday,May ${ele} ,2022 `;
+    return ele;
+}
+function dispTableCardio() {
+    let data = JSON.parse(localStorage.getItem("exerciseDairy"));
+    console.log(data)
+    let tr = document.createElement("tr");
+    let tdName = document.createElement("td");
+    tdName.innerText = data.exname;
+    let tdtime = document.createElement("td")
+    tdtime.innerText = data.time;
+    let tdcal = document.createElement("td");
+    tdcal.innerText = data.cal;
+    let tdButton = document.createElement("td");
+    let button = document.createElement("button");
+    button.innerText = "-";
+    button.addEventListener("click", function () {
+        localStorage.setItem("exerciseDairy", "")
+        window.location.reload();
+    })
+
+
+    tdButton.append(button);
+    tr.append(tdName, tdtime, tdcal, tdButton);
+    document.getElementById("cardio").append(tr)
+}
+dispTableCardio();
+function dispTableStrength() {
+    let data = JSON.parse(localStorage.getItem("exerciseDairyStrength"));
+    console.log(data + "data in func")
+    let tr = document.createElement("tr");
+    let tdName = document.createElement("td");
+    tdName.innerText = data.exname;
+    let tdtime = document.createElement("td")
+    tdtime.innerText = data.time;
+    let tdcal = document.createElement("td");
+    tdcal.innerText = data.cal;
+    let tdButton = document.createElement("td");
+    let button = document.createElement("button");
+    button.innerText = "-";
+    button.addEventListener("click", function () {
+        localStorage.setItem("exerciseDairyStrength", "")
+        window.location.reload();
+    })
+
+
+    tdButton.append(button);
+    tr.append(tdName, tdtime, tdcal, tdButton);
+    document.getElementById("strengthTraining").append(tr)
+}
+dispTableStrength();
+function Showreport(){
+    window.location.href= "report.html"
+   let cardio =  JSON.parse(localStorage.getItem("addedExercise"));
+   let strength = JSON.parse(localStorage.getItem("addedExercise"));
 }
