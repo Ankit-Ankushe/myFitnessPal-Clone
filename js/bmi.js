@@ -32,12 +32,12 @@ function cal() {
    p.innerText="Target weigth range: 56.8 kg - 76.8 kg"
    bmibox.append(h,p)
     var arrow = document.createElement("div");
-    arrow.style.width = "5px";
-    arrow.style.height = "5px";
+    // arrow.style.width? = "10px";
+    // arrow.style.height = "10px";
     // arrow.style.backgroundColor = "black";
     arrow.style.position = "absolute";
     arrow.style.left = `${leftSpace}px`;
-    arrow.style.top = "-14px";
+    arrow.style.top = "-21px";
     arrow.setAttribute("id","arrow")
 
     var line = document.createElement("div")
