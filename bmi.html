@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Your BMI</title>
-    <link rel="stylesheet" href="css/bmi.css">
+    <link rel="stylesheet" href="./css/bmi.css">
     <link rel="stylesheet" href="homePage.css">
     <style>
         table{
-            margin-top: 65px;
+            margin-top: 10px;
             border: 1px solid black;
             width: 600px;
             text-align: center;
@@ -24,12 +24,12 @@
             height: 50px;
         }
         #arrow{
-            margin-top: 50PX;
+            margin-top: 50px;
             width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 20px solid black;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid black;
         }
     
     </style>
@@ -42,7 +42,7 @@
     <div id="leftDiv">
         <div>
             <p>hi, </p>
-            <p>username</p>
+            <p id="userName">username</p>
         </div>
         <div>
             <a href="">
@@ -79,12 +79,12 @@
   </div>
   <div id="bottom">
     <div><a href="./homePage.html">MY HOME</a></div>
-    <div><a href="">FOOD</a></div>
+    <div><a href="./foodpage.html">FOOD</a></div>
     <div><a href="./exerciseDairy.html">EXERCISE</a></div>
-    <div><a href="">REPORT</a></div>
+    <!-- <div><a href="">REPORT</a></div> -->
     <div><a  href="./appgallery.html" onclick="navbarFunc(5)">APPS</a></div>
     <div><a href="./community.html">COMMUNITY</a></div>
-    <div><a href="">BLOG</a></div>
+    <div><a href="./blog.html">BLOG</a></div>
     <div><a href="./premium.html">PREMIUM</a></div>
   </div>
   <div id="bottom2">
@@ -161,6 +161,6 @@
         </div>
     </div>
 </body>
-<script src="../js/bmi.js"></script>
+<script src="./js/bmi.js"></script>
 
 </html>

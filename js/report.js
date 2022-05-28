@@ -1,3 +1,9 @@
+function showName(){
+    let name = JSON.parse(localStorage.getItem("userName"))
+    console.log(name[name.length-1])
+    document.getElementById("userName").innerText = name[name.length-1]
+ }
+ showName();
 function getSum(){
     let cardio = JSON.parse(localStorage.getItem("exerciseDairy"));
     let strength = JSON.parse(localStorage.getItem("exerciseDairyStrength"));

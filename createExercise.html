@@ -123,7 +123,7 @@ h3{
         <div id="leftDiv">
             <div>
                 <p>hi, </p>
-                <p>username</p>
+                <p id="userName">username</p>
             </div>
             <div>
                 <a href="">
@@ -170,7 +170,7 @@ h3{
     </div>
     <div id="bottom2">
         <div><a href="./exerciseDairy.html" id="a1">Excercise Dairy</a></div>
-        <div><a href="./exerciseDatabase.html" id="a2">Database</a></div>
+        <div><a href="./addCardio.htmlS" id="a2">Database</a></div>
         <div><a href="./createExercise.html" id="a3">My Excercise</a></div>
         <div><a href="setting.html" id="a4">Setting</a></div>
         <div><a  id="a5"></a></div>
@@ -210,5 +210,12 @@ h3{
        let cal = document.getElementById("exerciseCalories")
 
     }
+    function showName(){
+   let name = JSON.parse(localStorage.getItem("userName"))
+   console.log(name[name.length-1])
+   document.getElementById("userName").innerText = name[name.length-1]
+}
+showName();
 </script>
+
 </html>

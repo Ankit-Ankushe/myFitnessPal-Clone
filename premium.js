@@ -1,3 +1,9 @@
+function showName(){
+    let name = JSON.parse(localStorage.getItem("userName"))
+    console.log(name[name.length-1])
+    document.getElementById("userName").innerText = name[name.length-1]
+ }
+ showName();
 let slideDivBox = document.getElementById("slideDivBox");
 let rightArrow = document.querySelector(".fa-angle-right");
 let leftArrow = document.querySelector(".fa-angle-left");

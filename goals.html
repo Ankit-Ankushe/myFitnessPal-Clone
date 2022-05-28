@@ -16,7 +16,7 @@
         <div id="leftDiv">
             <div>
                 <p>hi, </p>
-                <p>username</p>
+                <p id="userName">username</p>
             </div>
             <div>
                 <a href="">
@@ -316,5 +316,13 @@
 
 
 </body>
+<script>
+    function showName(){
+   let name = JSON.parse(localStorage.getItem("userName"))
+   console.log(name[name.length-1])
+   document.getElementById("userName").innerText = name[name.length-1]
+}
+showName();
+</script>
 
 </html>

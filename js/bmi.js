@@ -1,4 +1,9 @@
-
+function showName(){
+  let name = JSON.parse(localStorage.getItem("userName"))
+  console.log(name[name.length-1])
+  document.getElementById("userName").innerText = name[name.length-1]
+}
+showName();
 document.getElementById("calculate").addEventListener('click', cal)
 function cal() {
     event.preventDefault()
@@ -29,7 +34,8 @@ function cal() {
    var h=document.createElement('h3')
    h.innerText="Your BMI is "+bm
    var p=document.createElement("p")
-   p.innerText="Target weigth range: 56.8 kg - 76.8 kg"
+   p.innerText="Target weigth range: 56.8 kg - 76.8 kg";
+   p.style.marginBottom="50px";
    bmibox.append(h,p)
     var arrow = document.createElement("div");
     // arrow.style.width? = "10px";
@@ -37,7 +43,7 @@ function cal() {
     // arrow.style.backgroundColor = "black";
     arrow.style.position = "absolute";
     arrow.style.left = `${leftSpace}px`;
-    arrow.style.top = "-21px";
+    arrow.style.top = "-70px";
     arrow.setAttribute("id","arrow")
 
     var line = document.createElement("div")

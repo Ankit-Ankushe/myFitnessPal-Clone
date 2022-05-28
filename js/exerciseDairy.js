@@ -3,6 +3,12 @@
 
 // document.getElementById("diplayDate").append(p);
 
+function showName(){
+    let name = JSON.parse(localStorage.getItem("userName"))
+    console.log(name[name.length-1])
+    document.getElementById("userName").innerText = name[name.length-1]
+ }
+ showName();
 function dateDec(ele) {
     ele--;
     document.getElementById("displayDate").innerText = `Friday,May ${ele} ,2022 `;
